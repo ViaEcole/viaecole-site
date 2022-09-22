@@ -1,0 +1,559 @@
+body {
+    color: #666;
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: -apple-system, "Segoe UI", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* =========================================================================
+   content container
+   ========================================================================= */
+
+.content-container {
+    width: 960px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 15px;
+}
+
+.content-container h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+
+
+/* =========================================================================
+   header
+   ========================================================================= */
+
+
+.header {
+    background-color: #fff;
+    height: 80px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header img {
+    vertical-align: middle;
+    height: 40px;
+    float: left;
+    padding-top: 5px;
+}
+
+.header .content-container {
+    overflow: hidden;
+}
+
+.header .menu-toggler {
+    position: absolute;
+    border-bottom: 12px double #666;
+    border-top: 4px solid #666;
+    content: "";
+    top: 22px;
+    right: 20px;
+    height: 5px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
+
+/* =========================================================================
+   menu
+   ========================================================================= */
+
+.menu {
+    float: right;
+}
+
+.menu ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.menu ul li {
+    font-size: 0.875rem;
+    font-size: 1em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #1570a6;
+    margin-left: 20px;
+}
+
+.menu ul li.active a {
+    color: #1570a6;
+    text-decoration: underline;
+}
+
+
+
+/* =========================================================================
+   Banner Image
+   ========================================================================= */
+
+.banner-image-container {
+    margin-top: 80px;
+    display: block;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    background: url('Images/banner-image.jpg')no-repeat;
+    background-size: cover;
+}
+
+
+
+/* =========================================================================
+   Images
+   ========================================================================= */
+
+.image-container {
+    display: inline-block;
+    overflow: auto;
+    width: 33%;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.img-circle-container {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    border: 3px solid #a6a6a6;
+}
+
+.img-circle-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-color: #f7f7f7;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-circle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container h3 {
+    text-align: center;
+}
+
+
+
+
+/* =========================================================================
+   Services
+   ========================================================================= */
+
+.services .content-container p {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.service-one,
+.service-three {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.service-two {
+    display: block;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.services .content-container .image-container p {
+    font-size: 14px;
+    margin-bottom: 80px;
+    line-height: 20px;
+    padding: 0 20px 0 20px;
+}
+
+
+
+
+/* ========================================================================= 
+   Footer
+   ========================================================================= */
+
+.footer {
+    font-size: 13px;
+    background-color: #3e4040;
+    padding-bottom: 40px;
+}
+
+.contact-container {
+    display: inline-block;
+    width: 130px;
+    vertical-align: top;
+}
+
+
+.about-container,
+.job-container,
+.vision-container {
+    display: inline-block;
+    width: 230px;
+    vertical-align: top;
+    /*margin-right: 20px;
+    margin-left: 20px;*/
+}
+
+.footer p {
+    width: 90%;
+    color: #fff;
+    line-height: 20px;
+}
+
+.footer h3 {
+    text-align: left;
+    font-weight: 100;
+    color: #fac076;
+}
+
+.footer .content-container {
+    overflow: hidden;
+}
+
+.footer .content-container ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+
+
+/* =========================================================================
+   Media Queries
+   ========================================================================= */
+
+
+@media screen and (max-width:800px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggler {
+        display: block;
+    }
+
+    .menu.expanded {
+        display: block;
+        background-color: #fbcb8e;
+        background-color: #333;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 16px 10px;
+        margin: 0;
+    }
+
+    .menu.expanded ul {
+        padding: 0;
+    }
+
+    .menu.expanded ul li {
+        text-align: left;
+        margin-bottom: 10px;
+        display: inherit;
+    }
+
+    .menu.expanded li a {
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .header {
+        height: 60px;
+    }
+
+    .header img {
+        height: 25px;
+        margin-left: 10px;
+    }
+
+    .banner-image-container {
+        margin-top: 60px;
+        height: 250px;
+        background: url('Images/banner-image.jpg')no-repeat;
+        background-size: cover;
+    }
+
+    .banner-image-container h1 {
+        font-size: 18px;
+    }
+
+    .content-container {
+        max-width: 100%;
+    }
+
+    .services .content-container p {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .content-container h2 {
+        margin: 20px 0 10px 0;
+    }
+
+
+    .services {
+        height: auto;
+    }
+
+    .about-container,
+    .vision-container,
+    .job-container,
+    .contact-container {
+        width: 100%;
+        /*margin-left: 20px;
+        margin-right: 20px;*/
+    }
+
+    .image-container {
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-container .img-circle-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .services .content-container .image-container p {
+        margin-bottom: 50px;
+        padding: 0 20px 0 20px;
+    }
+
+    .footer h3, .footer p,
+    .footer .content-container ul {
+        padding: 0 0 10px 10px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .menu-toggler {
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+
+    .content-container {
+        width: 800px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contact-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .menu {
+        padding-right: 10px;
+    }
+
+    .image-container {
+        width: 32.5%;
+    }
+}
+
+
+
+/* =========================================================================
+   Terms Of Services
+   ========================================================================= */
+
+.terms-of-services {
+    max-width: 690px;
+    margin: 164px auto 64px;
+    padding: 0 12px;
+}
+
+@media screen and (max-width:700px) {
+    .terms-of-services {
+        margin: 64px auto 64px;
+    }
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / Close Panel
+   ========================================================================= */
+
+.terms-of-services__close-panel {
+    position: fixed;
+    right: 32px;
+    top: 32px;
+}
+
+@media screen and (max-width:700px) {
+    .terms-of-services__close-panel {
+        position: fixed;
+        right: 16px;
+        top: 16px;
+    }
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / Close Link
+   ========================================================================= */
+
+.terms-of-services__close-link {
+    background-color: #fff;
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-image: url('Images/material-icons_3-0-1_close_32_0_000000_none.png');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    transition: all .2s;
+}
+
+@media screen and (max-width:700px) {
+    .terms-of-services__close-link {
+        width: 32px;
+        height: 32px;
+        background-size: 16px 16px;
+    }
+}
+
+.terms-of-services__close-link:hover {
+    box-shadow: 0 0 24px rgba(0, 0, 0, .4);
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / h1
+   ========================================================================= */
+
+.terms-of-services h1 {
+    border-bottom: 2px solid #000;
+    margin-top: 128px;
+    margin-bottom: 64px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: normal;
+    font-size: 42px;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / h2
+   ========================================================================= */
+
+.terms-of-services h2 {
+    font-weight: normal;
+    color: #1570a6;
+    margin: 32px 0 8px;
+}
+
+
+/* =========================================================================
+   Terms Of Services / h3
+   ========================================================================= */
+
+.terms-of-services h3 {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    margin: 24px 0 4px;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / p
+   ========================================================================= */
+
+.terms-of-services p {
+    margin: 12px 0;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / table
+   ========================================================================= */
+
+.terms-of-services table {
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / th
+   ========================================================================= */
+
+.terms-of-services th {
+    text-align: left;
+    font-weight: 600;
+    padding: 4px 8px;
+
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / td
+   ========================================================================= */
+
+.terms-of-services td {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
