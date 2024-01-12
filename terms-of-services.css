@@ -1,0 +1,168 @@
+body {
+    color: #666;
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: -apple-system, "Segoe UI", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services
+   ========================================================================= */
+
+.terms-of-services {
+    max-width: 690px;
+    margin: 164px auto 64px;
+    padding: 0 12px;
+}
+
+@media screen and (max-width:700px) {
+    .terms-of-services {
+        margin: 64px auto 64px;
+    }
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / Close Panel
+   ========================================================================= */
+
+.terms-of-services__close-panel {
+    position: fixed;
+    right: 32px;
+    top: 32px;
+}
+
+@media screen and (max-width:700px) {
+    .terms-of-services__close-panel {
+        position: fixed;
+        right: 16px;
+        top: 16px;
+    }
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / Close Link
+   ========================================================================= */
+
+.terms-of-services__close-link {
+    background-color: #fff;
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-image: url('Images/material-icons_3-0-1_close_32_0_000000_none.png');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    transition: all .2s;
+}
+
+@media screen and (max-width:700px) {
+    .terms-of-services__close-link {
+        width: 32px;
+        height: 32px;
+        background-size: 16px 16px;
+    }
+}
+
+.terms-of-services__close-link:hover {
+    box-shadow: 0 0 24px rgba(0, 0, 0, .4);
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / h1
+   ========================================================================= */
+
+.terms-of-services h1 {
+    border-bottom: 2px solid #000;
+    margin-top: 128px;
+    margin-bottom: 64px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: normal;
+    font-size: 42px;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / h2
+   ========================================================================= */
+
+.terms-of-services h2 {
+    font-weight: normal;
+    color: #1570a6;
+    margin: 32px 0 8px;
+}
+
+
+/* =========================================================================
+   Terms Of Services / h3
+   ========================================================================= */
+
+.terms-of-services h3 {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    margin: 24px 0 4px;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / p
+   ========================================================================= */
+
+.terms-of-services p {
+    margin: 12px 0;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / table
+   ========================================================================= */
+
+.terms-of-services table {
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / th
+   ========================================================================= */
+
+.terms-of-services th {
+    text-align: left;
+    font-weight: 600;
+    padding: 4px 8px;
+
+}
+
+
+
+/* =========================================================================
+   Terms Of Services / td
+   ========================================================================= */
+
+.terms-of-services td {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
